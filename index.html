@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Custom Records" />
+		<meta name="description" content="Custom Records is a label established since 2016 and with a wide variety of genres. Its particularity lies in the unique concept of proposing an editing tool for the cover of each of its releases. This project was made by the Media & Interaction Design students at ECAL/Ecole Cantonale d'Art de Lausanne." />
+		<meta name="keywords" content="custom, records, editing, ecal, tool, cover, vinyl, mid, media, interaction, design" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico" />
+		<link rel="icon" type="image/png" href="imgs/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16" />
+
+		<!-- <link href='https://fonts.googleapis.com/css?family=Poppins:400' rel='stylesheet' type='text/css'> -->
+		<link rel="stylesheet" type="text/css" href="css/screen.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+		<!-- VOTRE FEUILLE DE STYLE -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+
+			<!-- <script src="js/html5shiv.js"></script> -->
+
+		<!-- <script defer src="js/p5.min.js"></script>
+		<script defer src="js/sketch.js"></script> -->
+
+
+
+
+		<title>Celaenia - Surmounted by scorn</title>
+	</head>
+
+	<body>
+		<a href="#" id="customRecords" class="invert"><img src="imgs/logotype_black.png" /><img src="imgs/logotype_white.png" /></a>
+
+		<div id="generator">
+			<a href="#" id="toggleDescription" class="invert"></a>
+
+			<!-- ICI VOUS POUVEZ MODIFIER -->
+
+			<h1 id="title">Surmounted by scorn<br /><small>Celaenia</small></h1>
+			<a href="#" id="buy">buy</a>
+			<button id="light1" type="button" onclick="light1Mode()">light1</button>
+			<button  id="light2" type="button" onclick="light2Mode()">light2</button>
+			<button  id="texture" type="button" onclick="textureMode()">texture</button>
+			<input type="color" value="#FF33A6" id="middleColorPicker">c2</input>
+			<input type="color" value="#BAF9FF" id="firstColorPicker">c1</input>
+			<div id="canvasContainer">
+				<!-- votre canvas et autres joyeusetés -->
+			</div>
+
+			<script src="three.js-master/build/three.js"></script>
+		<script src="three.js-master/examples/js/loaders/OBJLoader.js"></script>
+			<script defer src="js/main.js"></script>
+			<!-- ICI VOUS POUVEZ PLUS MODIFIER -->
+
+		</div>
+
+		<div id="description">
+			<blockquote>
+				She silenced the critics and peanut gallery alike with a bucolic singularity of bratty deep.
+				<small>—Pitchfork Review Generator</small>
+			</blockquote>
+			<div class="album">
+				Surmounted by scorn
+			</div>
+			<div class="artist">
+				Celaenia
+			</div>
+			<div class="informations">
+				31.05.2018<br />
+				2LP vinyl, Digital<br />
+				CR001<br />
+			</div>
+			<div class="tracklist">
+				A1. Prologue<br />
+				A2. At the beginning<br />
+				A3. Lost gun<br />
+				<hr />
+				B1. Living our lives<br />
+				B2. A moment<br />
+				<hr />
+				C1. Phone call<br />
+				C2. Run away<br />
+				C3. Crash<br />
+				<hr />
+				D1. The end
+			</div>
+			<div class="gallery">
+				<img src="imgs/cover/01.jpg" />
+				<img src="imgs/cover/02.jpg" />
+				<img src="imgs/cover/03.jpg" />
+				<img src="imgs/cover/04.jpg" />
+				<img src="imgs/cover/05.jpg" />
+				<img src="imgs/cover/06.jpg" />
+			</div>
+			<div class="cover">
+				ECAL⁄Pablo Bellon
+			</div>
+			<div class="production">
+				<img src="imgs/custom_records_white.png" />
+			</div>
+		</div>
+
+		<!-- PAS TOUCHE -->
+
+
+		<script>
+			var generator 		  = document.getElementById('generator'),
+				toggleDescription = document.getElementById('toggleDescription');
+
+			toggleDescription.addEventListener('click', function(e) {
+				e.stopPropagation();
+				document.body.classList.toggle('descriptionOpened');
+			}, false);
+
+			generator.addEventListener('click', function(e) {
+				document.body.classList.remove('descriptionOpened');
+			}, false);
+		</script>
+	</body>
+</html>

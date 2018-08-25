@@ -1,0 +1,68 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* html, body{
+  background-color: white;
+  font-family: Helvetica; */
+  /* display: flex;
+  flex-flow: column; */
+/* height: 100vh;
+color: white;
+user-select: none;
+} */
+h1{
+  font-size: 60px;
+  text-align: left;
+  margin:0px;
+}
+header {
+  /* flex: 0 0 auto; */
+  padding: 0px;
+}
+.column2{
+  height: 10%;
+  display: block;
+  position: absolute;
+  width: 30%;
+  left:20%;
+  bottom: 10%;
+}
+#celaenia{
+  font-size: 20px;
+}
+
+canvas{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+  height:500px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height:...;
+}
+button{
+  height: 30px;
+  width: 10%;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10
+  /* top: 70%; */
+  bottom:10%;
+  color: white;
+}
+#light1{
+background-color: red;
+left:30%;
+}
+#light2{
+  background-color: blue;
+  left:45%;
+}
+#texture{
+  background-color: black;
+  left: 60%;
+}
